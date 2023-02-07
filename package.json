@@ -21,6 +21,7 @@
     "copy-files": "shx mkdir -p dist/antlr && shx cp './src/antlr/*tokens' dist/antlr",
     "prettier": "prettier --write 'src/**/*' 'test/**/*'",
     "prepack": "npm run build",
+    "prepare": "npm run build",    
     "lint": "eslint src test",
     "test": "npm run test:node && npm run test:browser",
     "test:node": "mocha",
